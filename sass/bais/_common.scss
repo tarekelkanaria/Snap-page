@@ -1,0 +1,37 @@
+@import "./variables";
+html {
+  font-size: 62.5%;
+  font-family: "Epilogue", sans-serif;
+}
+* {
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+}
+body {
+  background-color: $backgroundColor;
+}
+ul {
+  list-style: none;
+}
+p {
+  font-size: 1.8rem;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+}
+.btn {
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
+  background-color: $backgroundColor;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+.one,
+.two {
+  background-image: $urlDown;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}

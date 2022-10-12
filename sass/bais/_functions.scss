@@ -1,0 +1,6 @@
+@function toggleArrow() {
+  $urlUp: "icon-arrow-up.svg";
+  $url: ("../../images/" #{$urlUp});
+  $urlDown: url($url);
+  @return $urlDown;
+}

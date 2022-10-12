@@ -1,0 +1,139 @@
+.top-head .join, .top-head .main-nav, .top-head .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-head .features-list li,
+.top-head .company-list li, .top-head .nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.landing .container {
+  display: flex;
+  justify-content: center;
+}
+
+.landing .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.top-head .company-list, .top-head .features-list {
+  padding: 2rem;
+  width: 15rem;
+  position: absolute;
+  top: 95%;
+  left: 2rem;
+  background-color: hsl(0deg, 0%, 98%);
+  display: none;
+}
+
+.top-head .features-list li,
+.top-head .company-list li {
+  width: 100%;
+  font-size: 1.6rem;
+  text-align: center;
+  color: hsl(0deg, 0%, 41%);
+  margin-bottom: 2rem;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Epilogue", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+}
+
+body {
+  background-color: hsl(0deg, 0%, 98%);
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+}
+
+.btn, .landing .text button, .top-head button {
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
+  background-color: hsl(0deg, 0%, 98%);
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+
+.one,
+.two {
+  background-image: url("../../images/icon-arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.top-head .main-nav {
+  width: 50%;
+}
+.top-head .nav {
+  width: 80%;
+  position: relative;
+}
+.top-head .item {
+  display: block;
+  font-size: 1.6rem;
+  color: hsl(0deg, 0%, 41%);
+  padding: 0 2rem;
+}
+.top-head .nav > li:hover {
+  color: hsl(0deg, 0%, 8%);
+  cursor: pointer;
+}
+.top-head .login {
+  border: none;
+}
+.top-head .join {
+  width: 25%;
+}
+.top-head .company-list {
+  left: 12rem;
+}
+.top-head .item:hover + .features-list,
+.top-head .item:hover + .company-list {
+  display: block;
+}
+.top-head .one:hover,
+.top-head .two:hover {
+  background-image: toglleArrow();
+}
+
+.landing .text {
+  width: 50%;
+}
+.landing .text h1 {
+  font-size: 6rem;
+  font-weight: 700;
+}
+.landing .text p {
+  font-size: 1.8rem;
+  color: hsl(0deg, 0%, 41%);
+}
+.landing .poster {
+  width: 50%;
+}
+.landing .poster img {
+  max-width: 100%;
+}/*# sourceMappingURL=style.css.map */

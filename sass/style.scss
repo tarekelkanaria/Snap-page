@@ -1,0 +1,85 @@
+@import "./bais/placeholder";
+@import "./bais/common";
+@import "./bais/variables";
+@import "./bais/functions";
+
+.top-head {
+  .container {
+    @extend %flexBetween;
+  }
+  .main-nav {
+    @extend %flexBetween;
+    width: 50%;
+  }
+  .nav {
+    @extend %flexAround;
+    width: 80%;
+    position: relative;
+  }
+  .item {
+    display: block;
+    font-size: 1.6rem;
+    color: $textColor;
+    padding: 0 2rem;
+  }
+  .nav > li:hover {
+    color: $blackColor;
+    cursor: pointer;
+  }
+  button {
+    @extend .btn;
+  }
+  .features-list {
+    @extend %list;
+  }
+  .login {
+    border: none;
+  }
+  .join {
+    @extend %flexBetween;
+    width: 25%;
+  }
+  .company-list {
+    @extend %list;
+    left: 12rem;
+  }
+  .features-list li,
+  .company-list li {
+    @extend %subList;
+    @extend %flexAround;
+  }
+  .item:hover + .features-list,
+  .item:hover + .company-list {
+    display: block;
+  }
+  .one:hover,
+  .two:hover {
+    background-image: toglleArrow();
+  }
+}
+.landing {
+  .container {
+    @extend %flexCenter;
+  }
+  .text {
+    width: 50%;
+    @extend %flexColumn;
+    h1 {
+      font-size: $paragraphFont + 4.2;
+      font-weight: 700;
+    }
+    p {
+      font-size: $paragraphFont;
+      color: $textColor;
+    }
+    button {
+      @extend .btn;
+    }
+  }
+  .poster {
+    width: 50%;
+  }
+  .poster img {
+    max-width: 100%;
+  }
+}
